@@ -7,6 +7,7 @@ import {
   Phone,
   Mail,
   MapPin,
+  Youtube,
 } from "lucide-react";
 
 const Footer = () => {
@@ -40,6 +41,12 @@ const Footer = () => {
                 href="https://www.instagram.com/brightworld2.5?igsh=MThpdXlsbzNneHAyOA=="
               >
                 <Instagram size={18} />
+              </a>
+              <a
+                className="w-10 h-10 flex items-center justify-center rounded-lg bg-slate-800 hover:bg-blue-600 transition"
+                href="https://www.youtube.com/@bright2.1"
+              >
+                <Youtube size={18} />
               </a>
               <a
                 className="w-10 h-10 flex items-center justify-center rounded-lg bg-slate-800 hover:bg-blue-600 transition"
