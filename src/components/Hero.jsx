@@ -25,9 +25,11 @@ const HeroSection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
-            <button className="bg-[#0066FF] hover:bg-blue-700 text-white px-6 py-3 rounded-full font-semibold transition-all shadow-md hover:shadow-lg">
-              Describe More →
-            </button>
+            <a href="#service">
+              <button className="bg-[#0066FF] hover:bg-blue-700 text-white px-6 py-3 rounded-full font-semibold transition-all shadow-md hover:shadow-lg">
+                Describe More →
+              </button>
+            </a>
           </div>
         </div>
 
@@ -37,9 +39,9 @@ const HeroSection = () => {
           <div className="absolute w-[250px] sm:w-[320px] md:w-[380px] lg:w-[450px] h-[250px] sm:h-[320px] md:h-[380px] lg:h-[450px] bg-blue-100 rounded-full blur-3xl opacity-40"></div>
 
           {/* Image */}
-          <div className="relative z-10 w-full max-w-[280px] sm:max-w-[350px] md:max-w-[420px] lg:max-w-[480px]">
+          <div className="relative z-10 w-full max-w-[480px]  md:max-w-[620px] lg:max-w-[680px]">
             <img
-              src="/images/hero.webp"
+              src="/images/heero.webp"
               alt="Cleaning Professional"
               className="w-full h-auto object-contain"
             />

@@ -5,22 +5,40 @@ import { Star } from "lucide-react";
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      name: "Rahul Menon",
+      name: "Gokul vijayan",
       role: "Home Owner",
       review:
-        "Bright World Cleaning Services exceeded my expectations. My home has never looked this spotless. Highly professional team!",
+        "I am extremely happy with the service provided by Bright World Cleaning Services. They did a fantastic job cleaning my house — every corner was spotless and well-organized. The team was professional, punctual, and paid great attention to detail. I’m very satisfied with the results and would highly recommend them to anyone looking for reliable and high-quality cleaning services.",
     },
     {
-      name: "Anjali Nair",
+      name: "Anish Raj",
       role: "Office Manager",
       review:
-        "Their commercial cleaning service is outstanding. Punctual, detailed, and extremely reliable.",
+        "I recently engaged Bright World Cleaning Services for a complete house and tile cleaning, and I am thoroughly impressed with their work. The team was punctual, professional, and extremely detail-oriented. Every corner of the house was cleaned to perfection, and the tiles now look spotless and shining like new.They worked efficiently without compromising on thoroughness, and their courteous approach made the entire experience pleasant.I would highly recommend Bright World Cleaning Services to anyone looking for reliable, top-notch cleaning. Their dedication and results truly exceeded my expectations",
     },
     {
-      name: "Faisal Khan",
+      name: "Anjali Prathap",
       role: "Apartment Resident",
       review:
-        "The deep cleaning service completely transformed my space. Worth every rupee!",
+        "Bright World team was very professional and supportive. They visited the site as scheduled, worked from 09.00am till night to complete all tasks without compromising quality, and delivered exactly what they promised. Highly recommended.",
+    },
+    {
+      name: "Sreeja Krishna",
+      role: "Apartment Resident",
+      review:
+        "After the tile work of the house, there was a lot of dust. When I was thinking about what to do without changing anything, I thought that deep cleaning would be good. So when I contacted them, I didn't have high hopes. But I have to say. I can't believe their service. How long did it take to clean each part of the house. I didn't think it would be so clean here. They did their job with great sincerity. I am very happy",
+    },
+    {
+      name: "Deepa Shiju",
+      role: "Apartment Resident",
+      review:
+        "We recently got our entire home deep cleaned @ Mannar and I can’t express how satisfied we are with the results! Every single corner — from the living room to the kitchen, bedrooms, and bathrooms — looks clean and perfect",
+    },
+    {
+      name: "Sreeja Janardhanan",
+      role: "Apartment Resident",
+      review:
+        "Very good service..Staffs were very cooperative. They removed dust from every corner and cleaned all the shades, kept all things were it was...it was a mess free cleaning. Thankyou so much...",
     },
   ];
 

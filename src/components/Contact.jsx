@@ -1,12 +1,50 @@
 "use client";
 
+import { useState } from "react";
 import { Phone, Mail, MapPin } from "lucide-react";
 
 const ContactSection = () => {
+  const whatsappNumber = "917907617404"; // your number without +
+
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    service: "Residential Cleaning",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const whatsappMessage = `
+Hello Bright World Cleaning Services,
+
+Name: ${formData.name}
+Phone: ${formData.phone}
+Service: ${formData.service}
+
+Message:
+${formData.message}
+`;
+
+    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+      whatsappMessage,
+    )}`;
+
+    window.open(url, "_blank");
+  };
+
   return (
     <section className="w-full bg-white py-20 lg:py-28">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-        {/* LEFT SIDE - CONTACT INFO */}
+        {/* LEFT SIDE */}
         <div>
           <span className="text-blue-600 text-sm uppercase tracking-widest font-semibold">
             Contact Us
@@ -18,8 +56,7 @@ const ContactSection = () => {
 
           <p className="mt-6 text-slate-600 text-lg leading-relaxed max-w-lg">
             Ready to transform your space? Contact Bright World Cleaning
-            Services today. Our team will respond quickly with a customized
-            cleaning solution.
+            Services today.
           </p>
 
           <div className="mt-10 space-y-6">
@@ -52,22 +89,26 @@ const ContactSection = () => {
               <div>
                 <h4 className="font-semibold text-slate-900">Location</h4>
                 <p className="text-slate-600 text-sm">
-                  Kayamkulam,Kerala, India
+                  Kayamkulam, Kerala, India
                 </p>
               </div>
             </div>
           </div>
         </div>
 
-        {/* RIGHT SIDE - FORM */}
+        {/* RIGHT SIDE FORM */}
         <div className="bg-slate-900 rounded-3xl p-10 shadow-2xl">
-          <form className="space-y-6">
+          <form onSubmit={handleSubmit} className="space-y-6">
             <div>
               <label className="block text-sm text-slate-300 mb-2">
                 Full Name
               </label>
               <input
                 type="text"
+                name="name"
+                required
+                value={formData.name}
+                onChange={handleChange}
                 placeholder="Enter your name"
                 className="w-full px-4 py-3 rounded-xl bg-slate-800 border border-slate-700 text-white focus:outline-none focus:border-blue-500 transition"
               />
@@ -79,6 +120,10 @@ const ContactSection = () => {
               </label>
               <input
                 type="tel"
+                name="phone"
+                required
+                value={formData.phone}
+                onChange={handleChange}
                 placeholder="Enter your phone number"
                 className="w-full px-4 py-3 rounded-xl bg-slate-800 border border-slate-700 text-white focus:outline-none focus:border-blue-500 transition"
               />
@@ -88,7 +133,12 @@ const ContactSection = () => {
               <label className="block text-sm text-slate-300 mb-2">
                 Service Type
               </label>
-              <select className="w-full px-4 py-3 rounded-xl bg-slate-800 border border-slate-700 text-white focus:outline-none focus:border-blue-500 transition">
+              <select
+                name="service"
+                value={formData.service}
+                onChange={handleChange}
+                className="w-full px-4 py-3 rounded-xl bg-slate-800 border border-slate-700 text-white focus:outline-none focus:border-blue-500 transition"
+              >
                 <option>Residential Cleaning</option>
                 <option>Commercial Cleaning</option>
                 <option>Deep Cleaning</option>
@@ -102,6 +152,9 @@ const ContactSection = () => {
               </label>
               <textarea
                 rows="4"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
                 placeholder="Tell us about your cleaning needs..."
                 className="w-full px-4 py-3 rounded-xl bg-slate-800 border border-slate-700 text-white focus:outline-none focus:border-blue-500 transition"
               ></textarea>
@@ -109,9 +162,9 @@ const ContactSection = () => {
 
             <button
               type="submit"
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white py-4 rounded-xl font-semibold transition-all shadow-lg hover:shadow-blue-500/30"
+              className="w-full bg-green-600 hover:bg-green-700 text-white py-4 rounded-xl font-semibold transition-all shadow-lg hover:shadow-green-500/30"
             >
-              Request Free Quote
+              Send via WhatsApp
             </button>
           </form>
         </div>

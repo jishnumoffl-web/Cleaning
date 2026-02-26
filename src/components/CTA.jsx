@@ -3,6 +3,23 @@
 import { Phone, CalendarCheck } from "lucide-react";
 
 const CTASection = () => {
+  const phoneNumber = "917907617404"; // without +
+  const displayNumber = "+91 7907617404";
+
+  const whatsappMessage = `Hello Bright World Cleaning Services, 
+I would like to book a cleaning service. Please share more details.`;
+
+  const handleWhatsApp = () => {
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      whatsappMessage,
+    )}`;
+    window.open(url, "_blank");
+  };
+
+  const handleCall = () => {
+    window.location.href = `tel:${displayNumber}`;
+  };
+
   return (
     <section className="relative w-full py-20 lg:py-28 bg-slate-900 overflow-hidden">
       {/* Background Glow Effects */}
@@ -26,12 +43,20 @@ const CTASection = () => {
 
         {/* Buttons */}
         <div className="mt-10 flex flex-col sm:flex-row justify-center gap-6">
-          <button className="flex items-center justify-center gap-3 bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-full font-semibold transition-all shadow-lg hover:shadow-blue-500/40">
+          {/* Book Now - WhatsApp */}
+          <button
+            onClick={handleWhatsApp}
+            className="flex items-center justify-center gap-3 bg-green-600 hover:bg-green-700 px-8 py-4 rounded-full font-semibold transition-all shadow-lg hover:shadow-green-500/40"
+          >
             <CalendarCheck size={20} />
             Book Now
           </button>
 
-          <button className="flex items-center justify-center gap-3 border border-slate-600 hover:border-blue-500 px-8 py-4 rounded-full font-semibold transition-all">
+          {/* Call Now */}
+          <button
+            onClick={handleCall}
+            className="flex items-center justify-center gap-3 border border-slate-600 hover:border-blue-500 px-8 py-4 rounded-full font-semibold transition-all"
+          >
             <Phone size={20} />
             Call Us Now
           </button>
