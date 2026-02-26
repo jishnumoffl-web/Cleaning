@@ -2,6 +2,7 @@ import AboutSection from "@/components/About";
 import ContactSection from "@/components/Contact";
 import CTASection from "@/components/CTA";
 import Footer from "@/components/Footer";
+import GallerySection from "@/components/Gallery";
 import HeroSection from "@/components/Hero";
 import Header from "@/components/Navbar";
 import ServicesSection from "@/components/Services";
@@ -26,6 +27,10 @@ export default function Home() {
 
       <div id="whychooseus">
         <WhyChooseSection />
+      </div>
+
+      <div id="gallery">
+        <GallerySection />
       </div>
 
       <div id="testimonial">

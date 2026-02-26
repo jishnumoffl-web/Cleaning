@@ -32,6 +32,18 @@ const ServicesSection = () => {
             "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200",
           desc: "Dust removal, vacuuming, bed sanitization and freshening service.",
         },
+        {
+          name: "Professional Water Tank Cleaning & Disinfection",
+          image:
+            "https://i.pinimg.com/736x/8d/27/4f/8d274f9570aacfe8c28c366be9df8876.jpg",
+          desc: "Complete removal of sludge, dirt, and bacterial buildup from overhead and underground water tanks. Our process includes high-pressure cleaning and certified disinfection to ensure safe, hygienic, and odor-free water storage for residential and commercial properties.",
+        },
+        {
+          name: "Well Cleaning & Water Source Restoration",
+          image:
+            "https://i.pinimg.com/736x/22/68/d1/2268d15487afabff0fc4dbe2a6b19266.jpg",
+          desc: "Thorough cleaning and restoration of open and bore wells by removing sediments, debris, and harmful contaminants. Our service improves water clarity, enhances quality, and ensures a safe and reliable water source for long-term use.",
+        },
       ],
     },
     {

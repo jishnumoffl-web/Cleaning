@@ -66,7 +66,9 @@ ${formData.message}
               </div>
               <div>
                 <h4 className="font-semibold text-slate-900">Phone</h4>
-                <p className="text-slate-600 text-sm">+91 7907617404</p>
+                <p className="text-slate-600 text-sm">
+                  +91 7907617404 | +91 6235641299
+                </p>
               </div>
             </div>
 
