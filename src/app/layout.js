@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Localhost",
+  title: "Bright World Cleaning Services | Professional Cleaning in Kerala",
   description: "Bright World Cleaning Services offers professional residential, commercial, and deep cleaning solutions in Kerala. Reliable, eco-friendly, and affordable cleaning services",
 };
 

@@ -29,13 +29,22 @@ const Footer = () => {
 
             {/* Social Icons */}
             <div className="flex gap-4 mt-6">
-              <a className="w-10 h-10 flex items-center justify-center rounded-lg bg-slate-800 hover:bg-blue-600 transition">
+              <a
+                className="w-10 h-10 flex items-center justify-center rounded-lg bg-slate-800 hover:bg-blue-600 transition"
+                href="https://www.facebook.com/p/Bright-world-cleaning-service-61574872500176/"
+              >
                 <Facebook size={18} />
               </a>
-              <a className="w-10 h-10 flex items-center justify-center rounded-lg bg-slate-800 hover:bg-blue-600 transition">
+              <a
+                className="w-10 h-10 flex items-center justify-center rounded-lg bg-slate-800 hover:bg-blue-600 transition"
+                href="https://www.instagram.com/brightworld2.5?igsh=MThpdXlsbzNneHAyOA=="
+              >
                 <Instagram size={18} />
               </a>
-              <a className="w-10 h-10 flex items-center justify-center rounded-lg bg-slate-800 hover:bg-blue-600 transition">
+              <a
+                className="w-10 h-10 flex items-center justify-center rounded-lg bg-slate-800 hover:bg-blue-600 transition"
+                href="https://www.justdial.com/Alappuzha/Bright-World-Cleaning-Services-Kayamkulam-Railway-Station-Kayamkulam/0477PX477-X477-250325105852-M2T4_BZDET"
+              >
                 <Twitter size={18} />
               </a>
             </div>
